@@ -14,12 +14,12 @@ app = FastAPI(title="API de Recomendación de Juegos de la plataforma STEAM",
 # Cargamos los datasets
 
 # Cargamos los dataset
-funcion_1 = pd.read_parquet('Dataset_funcion_1.parquet', engine='pyarrow')
-funcion_2 = pd.read_parquet('Dataset_funcion_2.parquet', engine='pyarrow')
-funcion_3 = pd.read_parquet('Dataset_funcion_3.parquet', engine='pyarrow')
-funcion_4 = pd.read_parquet('Dataset_funcion_4.parquet', engine='pyarrow')
-funcion_5 = pd.read_parquet('Dataset_Funcion_5.parquet', engine='pyarrow')
-Data_sample = pd.read_parquet('Data_Sample_Recommendation', engine='pyarrow')
+funcion_1 = pd.read_parquet('Dataset_funcion_1_light.parquet', engine='pyarrow')
+funcion_2 = pd.read_parquet('Dataset_funcion_2_light.parquet', engine='pyarrow')
+funcion_3 = pd.read_parquet('Dataset_funcion_3_light.parquet', engine='pyarrow')
+funcion_4 = pd.read_parquet('Dataset_funcion_4_light.parquet', engine='pyarrow')
+funcion_5 = pd.read_parquet('Dataset_Funcion_5_light.parquet', engine='pyarrow')
+Data_sample = pd.read_parquet('Data_Sample_Recommendation_light', engine='pyarrow')
 
 
 # Iniciamos la API
@@ -226,7 +226,7 @@ async def recomendacion_usuario(user_id: str):
             if Data_sample['Recommend'][i] and Data_sample['Analisis_Sentimiento'][i] in [0, 1, 2]:
                 app_name = Data_sample['App_Name'][i]
                 if app_name not in seen_games:
-                    recommendations.append({"App_Name": app_name, "Similaridad": score})
+                    recommendations.append({"App_Name": app_name})
                     seen_games.add(app_name)
 
         top_recommendations = recommendations[:5]
