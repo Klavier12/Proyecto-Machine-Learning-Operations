@@ -9,7 +9,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Creamos la app FastAPI
 app = FastAPI(title="API de Recomendación de Juegos de la plataforma STEAM",
-              description="API para analizar juegos, desarrolladores y recomendaciones de la plataforma STEAM")
+              description="API para analizar juegos, desarrolladores y recomendaciones de la plataforma STEAM. Autor: Cristian Andrés Riveros")
 
 # Cargamos los datasets
 
