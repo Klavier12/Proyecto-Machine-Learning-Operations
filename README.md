@@ -1,6 +1,6 @@
 # MLOps-P1: Proyecto Machine Learning Operations
 
-El proyecto se centra en el desarrollo de una plataforma integral de análisis de datos y recomendaciones para una plataforma de entretenimiento. Se ha llevado a cabo un análisis detallado de los datos mediante el proceso ETL para garantizar la calidad y la integridad de los datos, seguido de un análisis exploratorio (EDA) para comprender mejor las tendencias y patrones. Este análisis ha proporcionado información crucial sobre el contenido de la plataforma y el comportamiento de los usuarios, fundamentando el desarrollo de las funciones de machine learning y el sistema de recomendaciones
+El proyecto se centra en el desarrollo de una plataforma integral de análisis de datos y recomendaciones para una plataforma de entretenimiento. Se ha llevado a cabo un análisis detallado de los datos mediante el proceso ETL para garantizar la calidad y la integridad de los datos, seguido de un análisis exploratorio (EDA) para comprender mejor las tendencias y patrones. Este análisis ha proporcionado información crucial sobre el contenido de la plataforma y el comportamiento de los usuarios, fundamentando el desarrollo de las funciones de machine learning y el sistema de recomendaciones.
 
 ## Tabla de Contenidos
 
